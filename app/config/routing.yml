@@ -1,0 +1,5 @@
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+
+post:
+    resource: "@PostBundle/Resources/config/routing.yml"

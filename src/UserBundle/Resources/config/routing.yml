@@ -1,0 +1,11 @@
+logout:
+    path: /logout
+    defaults: { _controller: UserBundle:Security:logout }
+
+register:
+    path: /register
+    defaults: { _controller: UserBundle:Security:register }
+
+handle_registration_form_submission:
+    path: /registration-form-submission
+    defaults: { _controller: UserBundle:Security:handleFormSubmission }

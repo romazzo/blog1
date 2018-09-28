@@ -1,0 +1,23 @@
+page_list:
+  path: /
+  defaults: { _controller: PostBundle:Post:list }
+
+page_add:
+  path: /edit
+  defaults: { _controller: PostBundle:Post:add }
+
+page_view:
+  path: /{id}
+  defaults: { _controller: PostBundle:Post:view }
+
+page_edit:
+  path: /page/edit/{id}
+  defaults: { _controller: PostBundle:Post:edit }
+  requirements:
+        id: '\d+'
+
+page_delete:
+  path: /delete/{id}
+  defaults: { _controller: PostBundle:Post:remove }
+  requirements:
+        id: '\d+'

@@ -1,0 +1,80 @@
+{% extends "@App/Layout/layout-two-col-8-4.html.twig" %}
+
+{% block Post %}
+
+    {% if app.user %}
+        <a href="{{ logout_path('main') }}">Выход</a><br>
+        <div><a href="{{ path('page_add') }}">Create Ad</a></div> <hr/>
+        <h4>Добро пожаловать, {{ app.user.username }}!</h4><br>
+        {% for page in pages %}
+            <div class="post">
+                {% set path = path('page_view', { 'id' : page.id }) %}
+                <h4><a href="{{ path }}">{{ page.title }}</a></h4>
+                <p>{{ page.description }}</p>
+                <p>{{ page.createdAt|date('d-m-Y') }}</p>
+            </div>
+            {% if app.user %}
+                <a href="{{ path('page_edit', { 'id' : page.id }) }}">Edit</a>
+
+
+                {% for items in page.users %}
+
+                    <div class="post-admin">{{ items.username }}</div>
+                {% endfor %}
+            {% endif %}
+            <hr/>
+
+
+        {% endfor %}
+
+
+    {% else %}
+        <form class="form-signin" action="{{ path('page_list') }}" method="POST">
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <div><a href="{{ path('register') }}">Register</a></div>
+            <label for="_username" class="sr-only">Username</label>
+            <input type="text"
+                   id="_username"
+                   name="_username"
+                   class="form-control"
+                   placeholder="Username" required autofocus>
+
+            <label for="_password" class="sr-only">Password</label>
+            <input type="password"
+                   id="_password"
+                   name="_password"
+                   class="form-control"
+                   placeholder="Password" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+        <div>
+            {% for page in pages %}
+                <div class="post">
+                    {% set path = path('page_view', { 'id' : page.id }) %}
+                    <h4><a href="{{ path }}">{{ page.title }}</a></h4>
+                    <p>{{ page.description }}</p>
+                    <p>{{ page.createdAt|date('d-m-Y') }}</p>
+                </div>
+
+                {% for items in page.users %}
+                    <div class="post-admin">{{ items.username }}</div>
+                {% endfor %}
+                <hr/>
+
+            {% endfor %}
+
+        </div>
+    {% endif %}
+    <div class="block-navigation">
+        <ul>
+            {% if navigator.pager > 1 %}
+                <li class="page-item"><a href="{{ path('page_list', { 'page' : navigator.pager - 1 }) }}">back</a></li>
+            {% endif %}
+            <li class="page-item">{{ navigator.pager }}</li>
+            {% if navigator.pager * navigator.limit < navigator.total %}
+                <li class="page-item"><a href="{{ path('page_list', { 'page' : navigator.pager + 1 }) }}">next</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}
