@@ -10,14 +10,15 @@
             <div class="post">
                 {% set path = path('page_view', { 'id' : page.id }) %}
                 <h4><a href="{{ path }}">{{ page.title }}</a></h4>
-                <p>{{ page.description }}</p>
-                <p>{{ page.createdAt|date('d-m-Y') }}</p>
+                <p>Описание: {{ page.description }}</p>
+                <p>Автор: {{ page.authorname }}</p>
+                <p>Дата публикации: {{ page.createdAt|date('d-m-Y') }}</p>
             </div>
             {% if app.user %}
                 <a href="{{ path('page_edit', { 'id' : page.id }) }}">Edit</a>
 
 
-                {% for items in page.users %}
+                {% for items in page.user %}
 
                     <div class="post-admin">{{ items.username }}</div>
                 {% endfor %}
@@ -53,11 +54,12 @@
                 <div class="post">
                     {% set path = path('page_view', { 'id' : page.id }) %}
                     <h4><a href="{{ path }}">{{ page.title }}</a></h4>
-                    <p>{{ page.description }}</p>
-                    <p>{{ page.createdAt|date('d-m-Y') }}</p>
+                    <p>Описание: {{ page.description }}</p>
+                    <p>Автор: {{ page.authorname }}</p>
+                    <p>Дата публикации: {{ page.createdAt|date('d-m-Y') }}</p>
                 </div>
 
-                {% for items in page.users %}
+                {% for items in page.user %}
                     <div class="post-admin">{{ items.username }}</div>
                 {% endfor %}
                 <hr/>

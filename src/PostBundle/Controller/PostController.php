@@ -49,8 +49,6 @@ class PostController extends Controller{
         $form->handleRequest($request);
         if($form->isSubmitted()){
             /** @var User $post_user  */
-            $post_user = $form->getData();
-            //var_dump($post_user);
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();

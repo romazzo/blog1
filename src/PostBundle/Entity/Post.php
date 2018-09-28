@@ -37,6 +37,13 @@ class Post
     private $description;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="authorname", type="string", length=255)
+     */
+    private $authorname;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="created_at", type="datetime")
@@ -44,14 +51,13 @@ class Post
     private $createdAt;
 
     /**
-     *
-     * @ORM\ManyToMany(targetEntity="\UserBundle\Entity\User", mappedBy="posts", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="\UserBundle\Entity\User", inversedBy="posts")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
-    private $users;
+    private $user;
 
     public function __construct() {
         $this->createdAt = new \DateTime();
-        $this->users = new ArrayCollection();
     }
 
 
@@ -144,30 +150,46 @@ class Post
      *
      * @return Post
      */
-    public function addUser(\UserBundle\Entity\User $user)
+    public function setUser(\UserBundle\Entity\User $user)
     {
-        $this->users[] = $user;
-        $user->addPost($this);
+        $this->user = $user;
         return $this;
     }
 
-    /**
-     * Remove user
-     *
-     * @param \UserBundle\Entity\User $user
-     */
-    public function removeUser(\UserBundle\Entity\User $user)
-    {
-        $this->users->removeElement($user);
-    }
 
     /**
      * Get users
      *
      * @return \Doctrine\Common\Collections\Collection
      */
-    public function getUsers()
+    public function getUser()
     {
-        return $this->users;
+        return $this->user;
+    }
+
+
+
+    /**
+     * Set authorname
+     *
+     * @param string $authorname
+     *
+     * @return Post
+     */
+    public function setAuthorname($authorname)
+    {
+        $this->authorname = $authorname;
+
+        return $this;
+    }
+
+    /**
+     * Get authorname
+     *
+     * @return string
+     */
+    public function getAuthorname()
+    {
+        return $this->authorname;
     }
 }

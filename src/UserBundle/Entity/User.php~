@@ -40,9 +40,7 @@ class User implements UserInterface, \Serializable
     private $password;
 
     /**
-     *
-     * @ORM\ManyToMany(targetEntity="\PostBundle\Entity\Post", inversedBy="users")
-     * @ORM\JoinTable(name="users_posts")
+     *@ORM\OneToMany(targetEntity="\PostBundle\Entity\Post", mappedBy="users", cascade={"persist", "remove"})
      */
     private $posts;
 
@@ -159,6 +157,11 @@ class User implements UserInterface, \Serializable
         ];
     }
 
+    public function isGranted($username)
+    {
+        return in_array($username, $this->getRoles());
+    }
+
     /**
      * Returns the salt that was originally used to encode the password.
      *
@@ -192,7 +195,7 @@ class User implements UserInterface, \Serializable
     public function addPost(\PostBundle\Entity\Post $post)
     {
         $this->posts[] = $post;
-
+        $post->addUser($this);
         return $this;
     }
 

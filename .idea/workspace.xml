@@ -26,7 +26,7 @@
       <file leaf-file-name="PostController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PostBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="26" selection-start="1454" selection-end="1454" vertical-scroll-proportion="-28.192308" vertical-offset="49" max-vertical-offset="1836">
+            <state line="51" column="12" selection-start="1641" selection-end="1641" vertical-scroll-proportion="-19.038462" vertical-offset="372" max-vertical-offset="1802">
               <folding>
                 <element signature="e#42#77#0" expanded="true" />
               </folding>
@@ -34,16 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <file leaf-file-name="Post.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PostBundle/Entity/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="89" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1462">
-              <folding>
-                <marker date="1538117604979" expanded="true" signature="1898:2066" placeholder="swiftmailer:" />
-                <marker date="1538117604979" expanded="true" signature="2082:2855" placeholder="knp_paginator:" />
-                <marker date="1538117604979" expanded="true" signature="2283:2560" placeholder="default_options:" />
-                <marker date="1538117604979" expanded="true" signature="2645:2855" placeholder="template:" />
-              </folding>
+            <state line="65" column="6" selection-start="1228" selection-end="1228" vertical-scroll-proportion="67.26923" vertical-offset="2837" max-vertical-offset="3400">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,7 +46,7 @@
       <file leaf-file-name="list.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="10" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.9396092" vertical-offset="797" max-vertical-offset="1445">
+            <state line="58" column="78" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.60390764" vertical-offset="646" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -60,16 +55,25 @@
       <file leaf-file-name="view.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="527">
+            <state line="8" column="26" selection-start="155" selection-end="155" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PostBundle/Entity/Post.php">
+      <file leaf-file-name="PostType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PostBundle/Form/PostType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="27" selection-start="2436" selection-end="2443" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="3043">
+            <state line="16" column="68" selection-start="466" selection-end="466" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/add.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="24" selection-start="152" selection-end="152" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -102,13 +106,13 @@
         <option value="$PROJECT_DIR$/src/PostBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/PostBundle/Resources/views/Page/add.html.twig" />
         <option value="$PROJECT_DIR$/src/PostBundle/Resources/views/Page/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/PostBundle/Form/PostType.php" />
-        <option value="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig" />
-        <option value="$PROJECT_DIR$/src/PostBundle/Entity/Post.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/PostBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/PostBundle/Form/PostType.php" />
+        <option value="$PROJECT_DIR$/src/PostBundle/Entity/Post.php" />
+        <option value="$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig" />
         <option value="$PROJECT_DIR$/src/PostBundle/Resources/views/Page/list.html.twig" />
       </list>
     </option>
@@ -329,6 +333,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giraffe.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giraffe.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -391,24 +417,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="giraffe.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="giraffe.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -460,7 +468,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2613293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26510575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -494,6 +502,27 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="20" selection-start="2436" selection-end="2436" vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="9" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="20" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.0" vertical-offset="3332" max-vertical-offset="3893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PostBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="37" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1921">
@@ -631,11 +660,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PostBundle/Repository/PostRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="44" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.93605685" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Page/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="37" selection-start="130" selection-end="130" vertical-scroll-proportion="0.21136767" vertical-offset="0" max-vertical-offset="563" />
@@ -644,11 +668,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/RedirectResponse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="415" selection-end="415" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="1768" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="6" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.3490909" vertical-offset="556" max-vertical-offset="20468" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Validator/Constraints/UniqueEntity.php">
@@ -688,7 +707,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="20" selection-start="3499" selection-end="3499" vertical-scroll-proportion="0.348135" vertical-offset="1844" max-vertical-offset="6732" />
+        <state line="138" column="20" selection-start="3499" selection-end="3499" vertical-scroll-proportion="0.348135" vertical-offset="1844" max-vertical-offset="6732">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UserBundle/Form/UserType.php">
@@ -696,89 +717,88 @@
         <state line="11" column="6" selection-start="364" selection-end="364" vertical-scroll-proportion="-7.1153846" vertical-offset="2" max-vertical-offset="799" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PostBundle/Form/PostType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="516" selection-end="516" vertical-scroll-proportion="0.42273533" vertical-offset="0" max-vertical-offset="697" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="57" selection-start="422" selection-end="422" vertical-scroll-proportion="0.42273533" vertical-offset="0" max-vertical-offset="563" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="152" selection-end="152" vertical-scroll-proportion="0.24156305" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="392" selection-end="392" vertical-scroll-proportion="0.3321492" vertical-offset="85" max-vertical-offset="3808" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PostBundle/Entity/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="27" selection-start="2436" selection-end="2443" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="3043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="733" selection-end="733" vertical-scroll-proportion="0.5115453" vertical-offset="1" max-vertical-offset="748">
-          <folding>
-            <element signature="e#7#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="89" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1462">
-          <folding>
-            <marker date="1538117604979" expanded="true" signature="1898:2066" placeholder="swiftmailer:" />
-            <marker date="1538117604979" expanded="true" signature="2082:2855" placeholder="knp_paginator:" />
-            <marker date="1538117604979" expanded="true" signature="2283:2560" placeholder="default_options:" />
-            <marker date="1538117604979" expanded="true" signature="2645:2855" placeholder="template:" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="384" column="20" selection-start="12910" selection-end="12910" vertical-scroll-proportion="0.3490909" vertical-offset="5979" max-vertical-offset="6919">
-          <folding />
-        </state>
+        <state line="17" column="64" selection-start="733" selection-end="733" vertical-scroll-proportion="0.5115453" vertical-offset="1" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-components/src/Knp/Component/Pager/Paginator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="31" selection-end="31" vertical-scroll-proportion="0.061818182" vertical-offset="0" max-vertical-offset="2771">
-          <folding>
-            <element signature="e#39#93#0" expanded="false" />
-          </folding>
+        <state line="2" column="24" selection-start="31" selection-end="31" vertical-scroll-proportion="0.061818182" vertical-offset="0" max-vertical-offset="2771" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="89" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.7934028" vertical-offset="886" max-vertical-offset="1462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="397" column="20" selection-start="11954" selection-end="11954" vertical-scroll-proportion="0.3490909" vertical-offset="6268" max-vertical-offset="20468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Repository/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="44" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.84547067" vertical-offset="51" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="347" column="20" selection-start="11993" selection-end="11993" vertical-scroll-proportion="0.3490909" vertical-offset="5350" max-vertical-offset="6919" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="75" selection-start="955" selection-end="955" vertical-scroll-proportion="0.5435169" vertical-offset="357" max-vertical-offset="3740">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PostBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="26" selection-start="1454" selection-end="1454" vertical-scroll-proportion="-28.192308" vertical-offset="49" max-vertical-offset="1836">
+        <state line="51" column="12" selection-start="1641" selection-end="1641" vertical-scroll-proportion="-19.038462" vertical-offset="372" max-vertical-offset="1802">
           <folding>
             <element signature="e#42#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Form/PostType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="68" selection-start="466" selection-end="466" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="152" selection-end="152" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="6" selection-start="1228" selection-end="1228" vertical-scroll-proportion="67.26923" vertical-offset="2837" max-vertical-offset="3400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="155" selection-end="155" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PostBundle/Resources/views/Page/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="10" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.9396092" vertical-offset="797" max-vertical-offset="1445">
+        <state line="58" column="78" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.60390764" vertical-offset="646" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>

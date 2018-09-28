@@ -40,9 +40,7 @@ class User implements UserInterface, \Serializable
     private $password;
 
     /**
-     *
-     * @ORM\ManyToMany(targetEntity="\PostBundle\Entity\Post", inversedBy="users")
-     * @ORM\JoinTable(name="users_posts")
+     *@ORM\OneToMany(targetEntity="\PostBundle\Entity\Post", mappedBy="user", cascade={"persist", "remove"})
      */
     private $posts;
 
@@ -158,6 +156,7 @@ class User implements UserInterface, \Serializable
             'ROLE_USER'
         ];
     }
+
 
     /**
      * Returns the salt that was originally used to encode the password.

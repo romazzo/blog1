@@ -8,18 +8,15 @@
     <div class="post-view">
         <div class="post">
             <h4>{{ page.title }}</h4>
-            <p>{{ page.description }}</p>
-            <p>{{ page.createdAt|date('d-m-Y') }}</p>
+            <p>Описание: {{ page.description }}</p>
+            <p>Автор: {{ page.authorname }}</p>
+            <p>Дата публикации: {{ page.createdAt|date('d-m-Y') }}</p>
     {% if app.user %}
             <a href="{{ path('page_delete', { 'id' : page.id }) }}">Delete</a>
             <a href="{{ path('page_edit', { 'id' : page.id }) }}">Edit</a>
     {% endif %}
 
-        </div>
-        {% for items in page.users %}
-            <div class="post-admin">{{ items.username }}</div>
-        {% endfor %}
-    </div>
+
 
     <div class="post-link"><a href="/">back</a></div>
 
