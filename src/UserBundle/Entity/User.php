@@ -191,7 +191,6 @@ class User implements UserInterface, \Serializable
     public function addPost(\PostBundle\Entity\Post $post)
     {
         $this->posts[] = $post;
-        //$post->addUser($this);
         return $this;
     }
 

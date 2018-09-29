@@ -2,14 +2,20 @@
 
 {% block Post %}
 
-    <h3>Delete</h3>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+
+        <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
+    </div>
 
 
-    <div class="post-delete">
-        <div class="delete">
+    <div class="row">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Удалить</h4>
             {{ form(form) }}
         </div>
+        <div class="col-md-4 order-md-2 mb-4">
+        </div>
     </div>
-    <div class="post-link"><a href="/">back</a></div>
 
 {% endblock %}

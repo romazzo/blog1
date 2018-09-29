@@ -54,7 +54,7 @@ class Post
      * @ORM\ManyToOne(targetEntity="\UserBundle\Entity\User", inversedBy="posts")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
-    private $user;
+    public $user;
 
     public function __construct() {
         $this->createdAt = new \DateTime();

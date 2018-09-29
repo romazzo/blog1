@@ -2,22 +2,32 @@
 
 {% block Post %}
 
-    <h3>View post</h3>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
 
+        <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
+    </div>
 
-    <div class="post-view">
-        <div class="post">
-            <h4>{{ page.title }}</h4>
-            <p>Описание: {{ page.description }}</p>
-            <p>Автор: {{ page.authorname }}</p>
-            <p>Дата публикации: {{ page.createdAt|date('d-m-Y') }}</p>
-    {% if app.user %}
-            <a href="{{ path('page_delete', { 'id' : page.id }) }}">Delete</a>
-            <a href="{{ path('page_edit', { 'id' : page.id }) }}">Edit</a>
-    {% endif %}
+    <div class="row">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Просмотр</h4>
 
+            <div class="blog-post">
+                <h2 class="blog-post-title">{{ page.title }}</h2>
+                <p class="blog-post-meta">Дата публикации: {{ page.createdAt|date('M j, Y') }} | Автор: {{ page.authorname }}</p>
 
+                <p>{{ page.description }}</p>
+                <hr/>
+            {% if app.user %}
+                <nav class="blog-pagination">
+                    <a class="btn btn-success" href="{{ path('page_edit', { 'id' : page.id }) }}">Редактировать</a>
+                    <a class="btn btn-danger" href="{{ path('page_delete', { 'id' : page.id }) }}">Удалить</a>
+                </nav>
+            {% endif %}
+        </div>
+        <div class="col-md-4 order-md-2 mb-4">
+        </div>
+    </div>
 
-    <div class="post-link"><a href="/">back</a></div>
 
 {% endblock %}

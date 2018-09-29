@@ -52,5 +52,7 @@ security:
     access_control:
       - { path: ^/registration-form-submission$, role: IS_AUTHENTICATED_ANONYMOUSLY }
       - { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+      - { path: ^/38$, role: IS_AUTHENTICATED_ANONYMOUSLY }
       - { path: ^/register$, role: IS_AUTHENTICATED_ANONYMOUSLY }
       - { path: ^/, role: ROLE_USER }
+      - { path: ^/edit, role: ROLE_USER }

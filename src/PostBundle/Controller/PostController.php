@@ -45,10 +45,10 @@ class PostController extends Controller{
 
     public function addAction(Request $request){
         $post = new Post();
+        $post->user = $this->get('security.context')->getToken()->getUser();
         $form = $this->createForm(new PostType(), $post);
         $form->handleRequest($request);
         if($form->isSubmitted()){
-            /** @var User $post_user  */
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();
@@ -80,6 +80,8 @@ class PostController extends Controller{
     }
 
     public function removeAction($id, Request $request){
+
+
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('PostBundle:Post');
         $post = $repo->find($id);
