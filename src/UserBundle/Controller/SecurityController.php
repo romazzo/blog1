@@ -61,7 +61,7 @@ class SecurityController extends Controller{
         $this->get('security.token_storage')->setToken($token);
         $this->get('session')->set('_security_main', serialize($token));
 
-        $this->addFlash('success', 'You are now successfully registered');
+        $this->addFlash('success', 'Вы успешно зарегистрировались!');
         return $this->redirectToRoute('page_list');
     }
 

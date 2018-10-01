@@ -11,13 +11,13 @@ page_view:
   defaults: { _controller: PostBundle:Post:view }
 
 page_edit:
-  path: /page/edit/{id}
+  path: /edit/{id}
   defaults: { _controller: PostBundle:Post:edit }
   requirements:
         id: '\d+'
 
 page_delete:
   path: /delete/{id}
-  defaults: { _controller: PostBundle:Post:remove }
+  defaults: { _controller: PostBundle:Post:delete }
   requirements:
         id: '\d+'

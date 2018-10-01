@@ -36,12 +36,7 @@ class Post
      */
     private $description;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="authorname", type="string", length=255)
-     */
-    private $authorname;
+
 
     /**
      * @var \DateTime
@@ -54,7 +49,7 @@ class Post
      * @ORM\ManyToOne(targetEntity="\UserBundle\Entity\User", inversedBy="posts")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
-    private $user;
+    public $user;
 
     public function __construct() {
         $this->createdAt = new \DateTime();
@@ -144,13 +139,13 @@ class Post
     }
 
     /**
-     * Add user
+     * Set user
      *
      * @param \UserBundle\Entity\User $user
      *
      * @return Post
      */
-    public function setUser(\UserBundle\Entity\User $user)
+    public function setUser(\UserBundle\Entity\User $user = null)
     {
         $this->user = $user;
         return $this;
@@ -160,12 +155,11 @@ class Post
     /**
      * Get users
      *
-     * @return \Doctrine\Common\Collections\Collection
+     * @return \UserBundle\Entity\User
      */
     public function getUser()
     {
         return $this->user;
     }
-
 
 }

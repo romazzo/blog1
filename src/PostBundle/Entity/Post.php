@@ -36,12 +36,7 @@ class Post
      */
     private $description;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="authorname", type="string", length=255)
-     */
-    private $authorname;
+
 
     /**
      * @var \DateTime
@@ -144,13 +139,13 @@ class Post
     }
 
     /**
-     * Add user
+     * Set user
      *
      * @param \UserBundle\Entity\User $user
      *
      * @return Post
      */
-    public function setUser(\UserBundle\Entity\User $user)
+    public function setUser(\UserBundle\Entity\User $user = null)
     {
         $this->user = $user;
         return $this;
@@ -160,36 +155,11 @@ class Post
     /**
      * Get users
      *
-     * @return \Doctrine\Common\Collections\Collection
+     * @return \UserBundle\Entity\User
      */
     public function getUser()
     {
         return $this->user;
     }
 
-
-
-    /**
-     * Set authorname
-     *
-     * @param string $authorname
-     *
-     * @return Post
-     */
-    public function setAuthorname($authorname)
-    {
-        $this->authorname = $authorname;
-
-        return $this;
-    }
-
-    /**
-     * Get authorname
-     *
-     * @return string
-     */
-    public function getAuthorname()
-    {
-        return $this->authorname;
-    }
 }

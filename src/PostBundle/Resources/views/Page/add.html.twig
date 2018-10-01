@@ -1,11 +1,11 @@
-{% extends "@App/Layout/layout-two-col-8-4.html.twig" %}
-
-{% block Post %}
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
-
-        <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
-    </div>
+{% extends "::base.html.twig" %}
+{% block title %}Create Ad{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-12 order-md-1">
+            <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
+        </div>
+    </div><hr/>
     <div class="row">
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Create Ad</h4>

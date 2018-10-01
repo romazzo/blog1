@@ -12,13 +12,6 @@ use PostBundle\Entity\Post;
  */
 class PostRepository extends EntityRepository
 {
-    /*public function findLastPosts( $limit = 10 ){
-        $query = $this->createQueryBuilder('p');
-        $query->setMaxResults($limit);
-        $query->orderBy('p.id', 'DESC');
-        return $query->getQuery()->getResult();
-    }*/
-
     public function findLastPosts( $page = 1, $limit = 10 ){
         $query = $this->createQueryBuilder('p');
         $query->setMaxResults($limit);

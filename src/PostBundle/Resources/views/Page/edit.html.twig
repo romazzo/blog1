@@ -1,24 +1,23 @@
-{% extends "@App/Layout/layout-two-col-8-4.html.twig" %}
+{% extends "::base.html.twig" %}
+{% block title %}Редактировать{% endblock %}
+{% block body %}
 
-{% block Post %}
-
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
-
-        <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
-    </div>
+    <div class="row">
+        <div class="col-md-12 order-md-1">
+            <a class="btn btn-outline-primary" href="{{ path('page_list') }}">Назад</a>
+        </div>
+    </div><hr/>
 
     <div class="row">
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Редактировать</h4>
-            {{ form_start(form) }}
-                {{ form_errors(form) }}
-                {{ form_row(form.title) }}
-                {{ form_row(form.description) }}
-                {{ form_row(form.authorname) }}
-                {{ form_row(form.createdAt) }}
-                {{ form_row(form.submit, { 'label': 'Save' }) }}
-            {{ form_end(form) }}
+            {{ form_start(edit_form) }}
+                {{ form_errors(edit_form) }}
+                {{ form_row(edit_form.title) }}
+                {{ form_row(edit_form.description) }}
+                {{ form_row(edit_form.createdAt) }}
+                {{ form_row(edit_form.submit, { 'label': 'Save' }) }}
+            {{ form_end(edit_form) }}
         </div>
         <div class="col-md-4 order-md-2 mb-4">
         </div>
